@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.select2-container .select2-selection--single,.select2-container .select2-selection--multiple {
+    @apply select select-bordered w-full !important;
+    background: none !important;
+}
+
+.select2-container--disabled,
+.select2-container--disabled .select2-selection.select2-selection--single
+.select2-container--disabled .select2-selection.select2-selection--multiple{
+    cursor: not-allowed !important;
+    --tw-bg-opacity: 1;
+    background-color: hsla(var(--b2)/var(--tw-bg-opacity));
+    --tw-border-opacity: 1 !important;
+    border-color: hsla(var(--b2)/var(--tw-border-opacity)) !important;
+    --tw-text-opacity: 0.2;
+}
